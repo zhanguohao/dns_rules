@@ -1,199 +1,199 @@
 # 国外 dns 服务器
-# 台湾 Quad 101
 payload:
-  - 101.101.101.101
-  - 101.102.103.104
+  # 台湾 Quad 101
+  - IP-CIDR,101.101.101.101/32
+  - IP-CIDR,101.102.103.104/32
   # DoH https://dns.twnic.tw/dns-query
-  - dns.twnic.tw
+  - DOMAIN,dns.twnic.tw
   # 香港宽频 DNS
-  - 203.80.96.10
-  - 203.80.96.9
+  - IP-CIDR,203.80.96.10/32
+  - IP-CIDR,203.80.96.9/32
   # 香港网上行宽频 DNS
-  - 218.102.23.228
-  - 203.198.7.66
+  - IP-CIDR,218.102.23.228/32
+  - IP-CIDR,203.198.7.66/32
   # 香港有线宽频 i-Cable DNS
-  - 61.10.0.130
-  - 61.10.1.130
+  - IP-CIDR,61.10.0.130/32
+  - IP-CIDR,61.10.1.130/32
   # 和记环球电讯 DNS
-  - 202.181.240.44
-  - 210.0.255.251
+  - IP-CIDR,202.181.240.44/32
+  - IP-CIDR,210.0.255.251/32
   # 香港 HKNet 宽频 DNS
-  - 202.67.240.222
+  - IP-CIDR,202.67.240.222/32
   # 香港 PCCW DNS
-  - 202.153.97.2
-  - 202.153.97.130
+  - IP-CIDR,202.153.97.2/32
+  - IP-CIDR,202.153.97.130/32
   # 香港 Pacific DNS
-  - 202.14.67.4
-  - 202.14.67.14
+  - IP-CIDR,202.14.67.4/32
+  - IP-CIDR,202.14.67.14/32
   # 香港 CPCNet DNS
-  - 202.76.4.1
-  - 202.76.4.2
+  - IP-CIDR,202.76.4.1/32
+  - IP-CIDR,202.76.4.2/32
   # 香港 KDDI DNS
-  - 202.177.2.2
-  - 202.177.2.3
+  - IP-CIDR,202.177.2.2/32
+  - IP-CIDR,202.177.2.3/32
   # 香港 iAdvantage DNS
-  - 202.85.128.32
-  - 202.85.128.33
-  - 203.194.239.32
-  - 202.85.170.89
+  - IP-CIDR,202.85.128.32/32
+  - IP-CIDR,202.85.128.33/32
+  - IP-CIDR,203.194.239.32/32
+  - IP-CIDR,202.85.170.89/32
   # 台湾 中华电信
-  - 168.95.192.1
-  - 168.95.1.1
+  - IP-CIDR,168.95.192.1/32
+  - IP-CIDR,168.95.1.1/32
   # 西门子服务器（香港）
-  - 112.121.178.187
+  - IP-CIDR,112.121.178.187/32
   # Google DNS
-  - 8.8.8.8
-  - 8.8.4.4
+  - IP-CIDR,8.8.8.8/32
+  - IP-CIDR,8.8.4.4/32
   # DoH https://dns.google/dns-query
   # DoT dns.google
-  - dns.google
+  - DOMAIN,dns.google
   # IBM Quad9
-  - 9.9.9.9
-  - 149.112.112.112
+  - IP-CIDR,9.9.9.9/32
+  - IP-CIDR,149.112.112.112/32
   # DoH https://dns.quad9.net/dns-query
-  - dns.quad9.net
+  - DOMAIN,dns.quad9.net
   # DoH https://dns11.quad9.net/dns-query (安全&支持ECS)
-  - dns10.quad9.net
-  - dns11.quad9.net
+  - DOMAIN,dns10.quad9.net
+  - DOMAIN,dns11.quad9.net
   # OpenDNS
-  - 208.67.222.222
-  - 208.67.220.220
+  - IP-CIDR,208.67.222.222/32
+  - IP-CIDR,208.67.220.220/32
   # DoH https://doh.opendns.com/dns-query
-  - doh.opendns.com
-  - doh.sandbox.opendns.com
+  - DOMAIN,doh.opendns.com
+  - DOMAIN,doh.sandbox.opendns.com
   # DoH https://doh.familyshield.opendns.com/dns-query (家庭保护)
-  - doh.familyshield.opendns.com
+  - DOMAIN,doh.familyshield.opendns.com
   # Level3 DNS
-  - 4.2.2.1
-  - 4.2.2.2
+  - IP-CIDR,4.2.2.1/32
+  - IP-CIDR,4.2.2.2/32
   # 韩国 KT DNS
-  - 168.126.63.1
-  - 168.126.63.2
+  - IP-CIDR,168.126.63.1/32
+  - IP-CIDR,168.126.63.2/32
   # Cloudflare DNS
-  - 1.1.1.1
-  - 1.0.0.1
+  - IP-CIDR,1.1.1.1/32
+  - IP-CIDR,1.0.0.1/32
   # DoH https://1.1.1.1/dns-query
   # DoH https://1.0.0.1/dns-query
   # DoH https://cloudflare-dns.com/dns-query
-  - cloudflare-dns.com
-  # https://dns.cloudflare.com:443/dns-query
-  - dns.cloudflare.com
+  - DOMAIN,cloudflare-dns.com
+  # DoH https://dns.cloudflare.com:443/dns-query
+  - DOMAIN,dns.cloudflare.com
   # DoT one.one.one.one
   # DoT 1dot1dot1dot1.cloudflare-dns.com
-  - one.one.one.one
-  - 1dot1dot1dot1.cloudflare-dns.com
+  - DOMAIN,one.one.one.one
+  - DOMAIN,1dot1dot1dot1.cloudflare-dns.com
   # Free DNS
-  - 37.235.1.174
-  - 37.235.1.177
+  - IP-CIDR,37.235.1.174/32
+  - IP-CIDR,37.235.1.177/32
   # DynDNS
-  - 216.146.35.35
-  - 216.146.36.36
+  - IP-CIDR,216.146.35.35/32
+  - IP-CIDR,216.146.36.36/32
   # Comodo DNS
-  - 8.26.56.26
-  - 8.20.247.20
+  - IP-CIDR,8.26.56.26/32
+  - IP-CIDR,8.20.247.20/32
   # Verisign DNS（威瑞信）
-  - 64.6.64.6
-  - 64.6.65.6
+  - IP-CIDR,64.6.64.6/32
+  - IP-CIDR,64.6.65.6/32
   # Yandex DNS
-  - 77.88.8.8
-  - 77.88.8.1
+  - IP-CIDR,77.88.8.8/32
+  - IP-CIDR,77.88.8.1/32
   # Freenom DNS（荷兰)
-  - 80.80.80.80
-  - 80.80.81.81
+  - IP-CIDR,80.80.80.80/32
+  - IP-CIDR,80.80.81.81/32
   # AdGuard DNS
-  - 94.140.14.14
-  - 94.140.15.15
-  - 94.140.14.15
-  - 94.140.15.16
+  - IP-CIDR,94.140.14.14/32
+  - IP-CIDR,94.140.15.15/32
+  - IP-CIDR,94.140.14.15/32
+  - IP-CIDR,94.140.15.16/32
   # DoH https://dns.adguard.com/dns-query
-  - dns.adguard.com
+  - DOMAIN,dns.adguard.com
   # DoH https://dns.adguard-dns.com:443/dns-query
-  - dns.adguard-dns.com
+  - DOMAIN,dns.adguard-dns.com
   # DoH https://dns-family.adguard.com/dns-query (家庭保护)
-  - dns-family.adguard.com
+  - DOMAIN,dns-family.adguard.com
   # DoT dns.adguard.com
   # DoT dns-family.adguard.com (家庭保护)
   # Neustar UltraDNS
-  - 156.154.70.1
-  - 156.154.71.1
-  - 156.154.70.5
-  - 156.154.71.5
+  - IP-CIDR,156.154.70.1/32
+  - IP-CIDR,156.154.71.1/32
+  - IP-CIDR,156.154.70.5/32
+  - IP-CIDR,156.154.71.5/32
   # 柬埔寨 DNS
-  - 103.197.104.178
-  - 103.197.106.75
-  - 203.189.136.148
+  - IP-CIDR,103.197.104.178/32
+  - IP-CIDR,103.197.106.75/32
+  - IP-CIDR,203.189.136.148/32
   # UCOM DNS（日本东京）
-  - 203.112.2.4
+  - IP-CIDR,203.112.2.4/32
   # DNS.WATCH
-  - 84.200.69.80
-  - 84.200.70.40
+  - IP-CIDR,84.200.69.80/32
+  - IP-CIDR,84.200.70.40/32
   # SafeDNS
-  - 195.46.39.39
-  - 195.46.39.40
+  - IP-CIDR,195.46.39.39/32
+  - IP-CIDR,195.46.39.40/32
   # puntCAT DNS
-  - 109.69.8.51
+  - IP-CIDR,109.69.8.51/32
   # UncensoredDNS
-  - 91.239.100.100
-  - 89.233.43.71
+  - IP-CIDR,91.239.100.100/32
+  - IP-CIDR,89.233.43.71/32
   # GreenTeamDNS
-  - 81.218.119.11
-  - 209.88.198.133
+  - IP-CIDR,81.218.119.11/32
+  - IP-CIDR,209.88.198.133/32
   # DNS.SB
-  - 185.222.222.222
-  - 45.11.45.11
+  - IP-CIDR,185.222.222.222/32
+  - IP-CIDR,45.11.45.11/32
   # DoH https://doh.dns.sb/dns-query
-  - doh.dns.sb
+  - DOMAIN,doh.dns.sb
   # DoH https://doh.sb/dns-query
-  - doh.sb
+  - DOMAIN,doh.sb
   # DoT dot.sb
-  - dot.sb
+  - DOMAIN,dot.sb
   # Hurricane Electric HE
-  - 74.82.42.42
-  - 66.220.18.42
+  - IP-CIDR,74.82.42.42/32
+  - IP-CIDR,66.220.18.42/32
   # DNSReactor
-  - 104.236.210.29
-  - 45.55.155.25
+  - IP-CIDR,104.236.210.29/32
+  - IP-CIDR,45.55.155.25/32
   # CleanBrowsing DNS
-  - 185.228.168.9
-  - 185.228.169.9
-  - 185.228.168.10
-  - 185.228.169.11
-  - 185.228.168.168
-  - 185.228.169.168
+  - IP-CIDR,185.228.168.9/32
+  - IP-CIDR,185.228.169.9/32
+  - IP-CIDR,185.228.168.10/32
+  - IP-CIDR,185.228.169.11/32
+  - IP-CIDR,185.228.168.168/32
+  - IP-CIDR,185.228.169.168/32
   # DoH https://doh.cleanbrowsing.org/doh/family-filter/ (家庭保护)
-  - doh.cleanbrowsing.org
+  - DOMAIN,doh.cleanbrowsing.org
   # DoT dns.cleanbrowsing.org
   # PowerDNS
   # DoH https://doh.powerdns.org
-  - doh.powerdns.org
+  - DOMAIN,doh.powerdns.org
   # Worldlink DNS
-  - 202.79.32.33
-  - 202.79.32.34
+  - IP-CIDR,202.79.32.33/32
+  - IP-CIDR,202.79.32.34/32
   # 日本 IIJ DNS
   # DoH https://public.dns.iij.jp/dns-query
-  - public.dns.iij.jp
+  - DOMAIN,public.dns.iij.jp
   # Blahdns 日本节点
   # DoH https://doh-jp.blahdns.com/dns-query
-  - doh-jp.blahdns.com
+  - DOMAIN,doh-jp.blahdns.com
   # Mullvad Public DNS（常规）
-  - 194.242.2.2
+  - IP-CIDR,194.242.2.2/32
   # DoH https://dns.mullvad.net/dns-query
-  - dns.mullvad.net
+  - DOMAIN,dns.mullvad.net
   # Mullvad Public DNS（去广告+跟踪器）
-  - 194.242.2.3
+  - IP-CIDR,194.242.2.3/32
   # DoH https://adblock.dns.mullvad.net/dns-query
-  - adblock.dns.mullvad.net
+  - DOMAIN,adblock.dns.mullvad.net
   # Mullvad Public DNS（去广告+跟踪器+恶意软件）
-  - 194.242.2.4
+  - IP-CIDR,194.242.2.4/32
   # DoH https://base.dns.mullvad.net/dns-query
-  - base.dns.mullvad.net
+  - DOMAIN,base.dns.mullvad.net
   # Mullvad Public DNS（完全）
-  - 194.242.2.9
+  - IP-CIDR,194.242.2.9/32
   # DoH https://all.dns.mullvad.net/dns-query
-  - all.dns.mullvad.net
+  - DOMAIN,all.dns.mullvad.net
   # Norton ConnectSafe
-  - 199.85.126.10
-  - 199.85.127.10
+  - IP-CIDR,199.85.126.10/32
+  - IP-CIDR,199.85.127.10/32
   # OpenNIC
-  - 192.95.54.3
-  - 192.95.54.1
+  - IP-CIDR,192.95.54.3/32
+  - IP-CIDR,192.95.54.1/32
